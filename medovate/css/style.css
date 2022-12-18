@@ -1,0 +1,709 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Playfair+Display&display=swap');
+
+* {
+    margin: 0;  
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+/* Navigation bar */
+
+.logo {
+  height: 110px;
+  margin-left: 30px;
+}
+
+.navbar {
+  background-color: #F4F2EE;
+  display: flex;
+  position: relative;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid rgb(212, 211, 211);
+}
+
+.navbar-links {
+  font-family: "Playfair Display",serif;
+  height: 100%;
+  list-style-type: none;
+}
+
+.navbar-links ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  padding: 1rem;
+}
+
+.navbar-links li a:hover {
+  color: #98a791;
+  transition: .3s ease-out;
+}
+
+.toggle-button {
+  position: absolute;
+  top: .75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  width: 100%;
+  height: 3px;
+  background-color: #98a791;
+  border-radius: 10px;
+}
+
+.navbar ul li a.active-page
+{
+  color: #98a791;
+}
+
+/* Footer */
+
+.footer {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  background-color: #F4F2EE;
+  padding: 20px 0;
+}
+
+.footer .social {
+  text-align: center;
+  padding-bottom: 25px;
+  color: #98a791;
+}
+
+.footer .social a {
+  font-size: 24px;
+  color: inherit;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  line-height: 38px;
+  display: inline-block;
+  text-align: center;
+  margin: 0 8px;
+  opacity: 0.75;
+}
+
+.footer .social a:hover {
+  opacity: 0.9;
+}
+
+.footer ul {
+  margin-top: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.footer ul a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.footer ul li {
+  display: inline-block;
+  padding: 0 15px;
+}
+
+.footer ul li a:hover {
+  opacity: 1;
+}
+
+.footer .copyright {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: #aaa;
+}
+
+/* 8x8 grid */
+
+figure a img:hover {
+  box-shadow: 0 4px 8px 0 #98a791, 0 6px 20px 0 #98a791;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(7, 5vw);
+  grid-gap: 10px;
+}
+
+.gallery_img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.gallery_img_1 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 8;
+}
+
+.gallery_img_2 {
+  grid-column-start: 4;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+
+.gallery_img_3 {
+  grid-column-start: 4;
+  grid-column-end: 6;
+  grid-row-start: 4;
+  grid-row-end: 8;
+}
+
+.gallery_img_4 {
+  grid-column-start: 6;
+  grid-column-end: 8;
+  grid-row-start: 1;
+  grid-row-end: 6;
+}
+
+.gallery_img_5 {
+  grid-column-start: 6;
+  grid-column-end: 8;
+  grid-row-start: 6;
+  grid-row-end: 8;
+}
+
+/* Forside */
+
+.forsideoverskrift {
+  font-family: "Playfair Display",serif;
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.forsidetekst {
+  font-family: "EB Garamond",serif;
+  font-size: 1.1rem;
+  margin: 25px 10%;
+  line-height: 1.7;
+}
+
+.nyheder-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.nyheder-product {
+  max-width: 70%;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  align-self: center;
+  /* justify-content: space-between; */
+}
+
+/* Shop */
+
+.shopoverskrift {
+  font-family: "Playfair Display", serif;
+  color: #573916;
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.shoptekst {
+  font-family: "EB Garamond", serif;
+  font-size: 1.2rem;
+  color: #191919;
+  text-align: center;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-bottom: 10px;
+}
+
+.produkter1-container {
+  display: flex;
+  justify-content: center;
+}
+
+.produkter2-container {
+  display: flex;
+  justify-content: center;
+}
+
+.produkter3-container {
+  display: flex;
+  justify-content: center;
+}
+
+.produkter4-container {
+  display: flex;
+  justify-content: center;
+}
+
+.teprodukt {
+  max-width: 80%;
+  min-width: 50%;
+  margin-top: 30px;
+  margin-left: 40px;
+}
+
+.imgButton{
+  text-align: center;
+}
+
+.buyButton {
+  font-family: "Playfair Display", serif;
+  font-size: 16px;
+  color: white;
+  background-color: #98a791;
+  border: none;
+  padding: 7px 35px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.buyButton:hover {
+  background-color: #7a8874;
+  transition: .3s ease-out;
+}
+
+/* Produkt */
+
+.imgContainer {
+  display: flex;
+}
+
+.product-container {
+  display: flex;
+  /*justify-content: center;*/
+}
+
+.product-information {
+  max-width: 33.33%;
+  min-width: 33.33%;
+  margin: 24px;
+  align-self: center;
+}
+
+.produkt_img {
+  max-width: 80%;
+  margin: 24px;
+  align-self: center;
+}
+
+.produkt {
+  min-width: 100px;
+  margin: 20.8px;
+  float: left;
+}
+
+.medovate {
+  font-family: "Playfair Display", serif;
+  font-size: 1rem;
+  text-align: left;
+}
+
+.product-information-filler {
+  height: 1vw;
+}
+
+.produkttitel {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+}
+
+.product-information-filler2 {
+  height: 2vw;
+}
+
+.etsundtvalg {
+  font-family: "Playfair Display", serif;
+  color: #98a791;
+}
+
+.produkttekst {
+  font-family: "Playfair Display", serif;
+  font-size: 1rem;
+  max-width: 60%;
+}
+
+.button {
+  background-color: #98a791;
+  border: none;
+  font-family: "Playfair Display", serif;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #7a8874;
+  transition: .3s ease-out;
+}
+
+.nyhedsbrev {
+  font-family: "Playfair Display", serif;
+  font-size: 0.8rem;
+  margin-top: 20px;
+}
+
+.saadangoerdu_img {
+  flex-wrap: wrap;
+  max-width: 16%;
+  min-width: 16%;
+  margin: 10px;
+  align-self: center;
+}
+
+.seogsaa {
+  display: flex;
+  font-family: "Playfair Display", serif;
+  font-size: 1.5rem;
+  margin-left: 85px;
+}
+
+.seogsaa-container {
+  display: flex;
+  justify-content: center;
+}
+
+.seogsaa-product {
+  max-width: 90%;
+  min-width: 110%;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  align-self: center;
+  /* justify-content: space-between; */
+}
+
+/* Om os */
+
+.teafarm_img {
+  display: block;
+  max-width: 40%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+header.omosoverskrift {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.omostekst {
+  font-family:'EB Garamond', serif;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin: 15px 100px 30px 100px;
+}
+
+.drinking_img {
+  display: block;
+  max-width: 15%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Kontakt os */
+
+header.kontaktoverskrift {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 16px;
+  }
+
+article.kontakttekst {
+  font-family: 'EB Garamond', serif;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  text-align: center;
+  margin: 15px 100px 30px 100px;
+}
+
+.kontakt_img {
+  display: block;
+  max-width: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 1200px) {
+
+  /* Navigation bar */
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .toggle-button {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar-links ul li {
+    text-align: center;
+  }
+
+  .navbar-links ul li a {
+    padding: .5rem 1rem;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+
+  /* Forside */
+
+  .forsideoverskrift {
+    font-size: 1.3rem;
+  }
+
+  .forsidetekst {
+    font-size: 1rem;
+    margin: 10px 70px;
+  }
+
+  /* Shop */
+
+  .teprodukt {
+    /*margin-left: auto;*/
+    margin-right: auto;
+    margin-bottom: 10%;
+  }
+
+  .buyButton {
+    margin-top: 0px;
+    padding: 5px 30px;
+  }
+
+  /* Produkt */
+
+  .product-information {
+    max-width: 90px;
+    min-width: 400px;
+    margin-top: 20px;
+    align-self: center;
+  }
+  
+  .produkt_img {
+    max-width: 50%;
+    margin: 24px;
+    align-self: center;
+  }
+  
+  .produkt {
+    min-width: 100px;
+    margin: 20.8px;
+    float: left;
+  }
+  
+  .medovate {
+    font-size: 0.8rem;
+  }
+  
+  .product-information-filler {
+    height: 1vw;
+  }
+  
+  .produkttitel {
+    font-size: 1.4rem;
+  }
+  
+  .product-information-filler2 {
+    height: 2vw;
+  }
+  
+  .etsundtvalg {
+    font-size: 1rem;
+  }
+  
+  .produkttekst {
+    font-size: 0.9rem;
+  }
+  
+  .nyhedsbrev {
+    margin-top: 30px;
+    margin-right: 80px;
+  }
+  
+  .saadangoerdu_img {
+    display: none;
+  }
+
+  .seogsaa {
+    margin-left: 40px;
+  }
+
+  /* Om os */
+
+  header.omosoverskrift {
+    font-size: 1.5rem;
+    margin: 30px;
+  }
+
+  .omostekst {
+    font-size: 1.2rem;
+    margin: 30px;
+  }
+
+  .drinking_img {
+    max-width: 25%;
+  }
+
+  /* Kontakt os */
+
+  .kontakt_img {
+   max-width: 250px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+
+  .footer {
+    display: none;
+  }
+
+  /* Forside */
+
+  .nyheder-container {
+    display: none;
+  }
+
+  /* Shop */
+
+  .shopoverskrift {
+    font-size: 1.2rem;
+  }
+
+  .shoptekst {
+    font-size: 1rem;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .teprodukt {
+    margin-left: 10px;
+  }
+
+  .buyButton {
+    font-size: 0.7rem;
+    margin-top: 0px;
+    padding: 5px 20px;
+  }
+
+  /* Produkt */
+  
+  .product-container {
+    flex-direction: column;
+  }
+
+  .product-information {
+    max-width: 45%;
+    min-width: 200px;
+  }
+
+  .produkt_img {
+    max-width: 60%;
+  }
+
+  .produkttekst {
+    max-width: 100%;
+    font-size: 15px;
+  }
+
+  .seogsaa {
+    justify-content: center;
+    margin: 1.6px 0px 1px 0px;
+  }
+
+  .seogsaa-container {
+    flex-direction: column;
+    justify-content: end;
+  }
+
+  .seogsaa-product {
+    max-width: 70%;
+    min-width: 200px;
+    margin: 10px;
+    align-self: center;
+    justify-content: space-between;
+  }
+
+  /* Om os */
+
+  .teafarm_img {
+    min-width: 75%;
+  }
+
+  header.omosoverskrift {
+    text-align: left;
+  }
+
+  .drinking_img {
+    min-width: 35%;
+  }
+
+  /* Kontakt */
+
+  header.kontaktoverskrift {
+    font-size: 1.5rem;
+    text-align: left;
+    margin: 30px;
+  }
+
+  article.kontakttekst {
+    font-size: 1.2rem;
+    text-align: left;
+    margin: 30px;
+  }
+
+  .kontakt_img {
+    margin-bottom: 25px;
+  }
+}
